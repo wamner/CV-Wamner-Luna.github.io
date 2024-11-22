@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -12,7 +12,7 @@
 }
 :root {
    /* --bg-color: #081b29;*/
-     --bg-color: linear-gradient( #0a0f4f, #3c4bc7);
+    --bg-color: linear-gradient( #0a0f4f, #3c4bc7);
 
    ---img-hover: #0a0f4f;
 
@@ -26,6 +26,7 @@ html{
     overflow-x: hidden;
 }
 body{
+
     background: var(--bg-color);
     color: var(--text-color);
 }
@@ -194,7 +195,7 @@ section{
 
 }
 .btn-box .btn:nth-child(2):hover{
-    color: var(--bg-color);
+    color: #fff;
 
 }
 
@@ -215,15 +216,7 @@ section{
 
 }
 
-.home-imgHover{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-}
+
 
 .about{
     display: flex;
@@ -233,6 +226,11 @@ section{
     gap: 2rem;
     background: var(--second-bg-color);
     padding-bottom: 6rem;
+}
+
+.about h2{
+    color:#fff;
+   
 }
 .heading {
     position: relative;
@@ -283,11 +281,13 @@ span{
     position: relative;
     display: inline-block;
     font-size: 2.6rem;
+    color:#fff;
 }
 .about-content p{
     position: relative;
     font-size: 1.6rem ;
     margin: 2rem 0 3rem;
+    color:#fff;
 }
 .btn-box.btns{
     display: inline-block;
@@ -878,6 +878,7 @@ footer .animate.scroll {
 @media (max-width: 520px) {
     .home {
         justify-content: center;
+        width: 100%;
 
     }
     .home-content {
@@ -890,6 +891,7 @@ footer .animate.scroll {
         font-size: 5rem;
     }
 }
+
 
 
 
@@ -1011,13 +1013,12 @@ footer .animate.scroll {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #333;
-    color: #fff;
+ 
 }
 
 .header .logo {
     font-size: 1.5rem;
-    font-weight: bold;
+
 }
 
 .navbar {
@@ -1025,20 +1026,13 @@ footer .animate.scroll {
     gap: 20px;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-}
 
-.navbar a:hover {
-    color: #00bcd4;
-}
 
 /* Para pantallas pequeñas */
 @media (max-width: 768px) {
-  
-
+    .home{
+        width:100%;
+    }
     .navbar a {
         font-size: 1rem;
     }
@@ -1067,12 +1061,18 @@ footer .animate.scroll {
 
 /* Para pantallas más pequeñas (móviles) */
 @media (max-width: 480px) {
+ .bx-menu{
+    left:-12px;
+
+ }
     .header {
         padding: 10px;
+
     }
 
     .navbar {
         text-align: center;
+
     }
 
     .home-content h1 {
@@ -1172,47 +1172,6 @@ footer .animate.scroll {
     background: #0056b3;
     transform: scale(1.1);
 }
-
-/* Responsive Design para dispositivos móviles y tabletas */
-@media (max-width: 768px) {
-    .social-container {
-        right: 5%;
-    }
-
-    .toggle-icon {
-        font-size: 20px;
-        width: 45px;
-        height: 45px;
-    }
-
-    .home-sci a {
-        width: 35px;
-        height: 35px;
-    }
-}
-
-@media (max-width: 480px) {
-    .social-container {
-        left:80%;
-        top:80%;
-        right: 3%;
-    }
-
-    .toggle-icon {
-
-        font-size: 18px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .home-sci a  {
-
-        width: 30px;
-        height: 30px;
-    }
-   
-}
-
 
 
 
